@@ -11,6 +11,14 @@
     <name>Telegram Quickstart</name>
     <description>A quickstart to create a telegram Bot based on Apache Camel</description>
 
+    <contributors>
+        <contributor>
+            <name>Nicola Ferraro</name>
+            <email>ni.ferraro@gmail.com</email>
+            <url>http://www.nicolaferraro.me/</url>
+        </contributor>
+    </contributors>
+
     <!-- It is a spring-boot application -->
     <parent>
         <groupId>org.springframework.boot</groupId>
