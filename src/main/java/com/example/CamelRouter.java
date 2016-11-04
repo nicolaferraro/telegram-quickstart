@@ -16,9 +16,9 @@ public class CamelRouter extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("telegram:bots/{{telegram.auth.token}}")
+        from("telegram:bots")
         .bean(bot)
-        .to("telegram:bots/{{telegram.auth.token}}");
+        .to("telegram:bots");
 
     }
 }

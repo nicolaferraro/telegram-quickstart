@@ -1,5 +1,7 @@
 package com.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,6 +9,8 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Bot {
+
+    private Logger log = LoggerFactory.getLogger(getClass());
 
     /**
      * This method processes incoming messages and return responses.
@@ -18,6 +22,8 @@ public class Bot {
         if (message == null) {
             return null; // skip non-text messages
         }
+
+        log.info("Received message: {}", message);
 
         return "Why did you say \"" + message.replace("\"", "-") + "\"?";
     }
